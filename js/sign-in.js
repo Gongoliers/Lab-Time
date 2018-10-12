@@ -13,7 +13,7 @@ document.getElementById('submit').addEventListener('click', (e) => {
   LabAPI.signin(name, email, () => {
     NotificationManager.create('Success', `Welcome to the lab, ${name}`);
     setTimeout(() => {
-      window.location.href = "/";
+      window.location.href = "index.html";
     }, 1000);
   });
 })
