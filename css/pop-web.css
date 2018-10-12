@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+label p {
+  margin-bottom: 4px;
+  line-height: 16px; }
+
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=date], textarea {
+  padding: 12px 12px;
+  font-size: 16px;
+  min-width: 72em;
+  min-height: 24px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: none;
+  border-bottom: 3px solid;
+  border-color: lightgray;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 180ms;
+  transition-property: border-color, box-shadow; }
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus {
+  border-color: orange;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  outline: none; }
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  vertical-align: middle;
+  user-select: none;
+  width: calc(100% - 48px); }
+
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #e5e5e5;
+  border: 2px solid #777;
+  border-radius: 4px;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 180ms; }
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #e5e5e5; }
+
+.checkbox .accessibility-box {
+  z-index: -1;
+  width: calc(100% + 12px);
+  height: calc(100% + 5px);
+  position: absolute;
+  left: -6px;
+  top: -6px; }
+
+.checkbox input:focus ~ .accessibility-box {
+  border: 2px solid #999;
+  border-radius: 2px; }
+
+.checkbox input:checked ~ .checkmark {
+  background-color: orange;
+  border: 2px solid orange; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block; }
+
+.checkbox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg); }
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Fira Sans", sans-serif; }
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px; }
+
+/*# sourceMappingURL=pop-web.css.map */

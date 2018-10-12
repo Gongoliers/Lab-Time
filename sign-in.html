@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Time Sheet</title>
+    <link rel="stylesheet" href="css/pop-web.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign in to the lab</h1>
+      <label>
+        <p>Name</p>
+        <input type="text" id="name">
+      </label>
+
+      <label>
+        <p>Email</p>
+        <input type="email" id="email">
+      </label>
+
+      <div id="submit-section">
+        <button type="button" id="submit">Sign in</button>
+        <button type="button" id="cancel" onclick="location.href='/'">Cancel</button>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="js/notifications.js" charset="utf-8"></script>
+  <script src="js/LabAPI.js" charset="utf-8"></script>
+  <script src="js/sign-in.js" charset="utf-8"></script>
+
+</html>
